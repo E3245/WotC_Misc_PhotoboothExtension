@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>9eb890de-9cba-4e2b-aa7d-9739995b8f03</Guid>
+    <Name>WotC_Misc_PhotoboothExtension</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>Photobooth Extension</AssemblyName>
+    <RootNamespace>Photobooth Extension</RootNamespace>
+    <ProjectGuid>{0c1a9ba7-43d4-4b25-92ed-3491ac36ed31}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\Effects\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Props\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPhotoboothExtendedSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Line12.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Line24.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Mob12.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Mob24.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Wedge12.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Wedge24.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\WotC_PhotoboothPlusPackage.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\00_WotC_Misc_PhotoboothExtension.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WotC_Misc_PhotoboothExtension.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\Actor_PhotoboothFX.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\Actor_PhotoboothLight.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\Actor_PhotoboothProp.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\PhotoboothDataStructures.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\PhotoboothExtendedSettings.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\UIMechaListItem_PhotoboothEx.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\UIPhotoboothMovie_PE.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\UISlider_PE.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\X2DownloadableContentInfo_Misc_PhotoboothExtended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\X2Helpers_PhotoboothExtended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\X2PhotoboothExtended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\X2PhotoboothReplacement.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIArmory_Photobooth_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIPhotoboothExtendedMaster.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIPhotoboothReview_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UITactical_Photobooth_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Config\Effects" />
+    <Folder Include="Config\Props" />
+    <Folder Include="Localization" />
+    <Folder Include="Content" />
+    <Folder Include="Src" />
+    <Folder Include="Src\00_WotC_Misc_PhotoboothExtension" />
+    <Folder Include="Src\00_WotC_Misc_PhotoboothExtension\Classes" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

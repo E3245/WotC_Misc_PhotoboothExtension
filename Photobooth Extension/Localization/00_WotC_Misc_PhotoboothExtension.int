@@ -1,0 +1,14 @@
+[Actor_PhotoboothLight]
+
+strLightType_Spot		= "Spot Light"
+strLightType_Point		= "Point Light"
+
+[X2DownloadableContentInfo_Misc_PhotoboothExtended]
+
+m_FormationDisplayName_Wedge_12Count	= "Wedge (12 Units)"
+m_FormationDisplayName_Line_12Count		= "Line (12 Units)"
+m_FormationDisplayName_Mob_12Count		= "Mob (12 Units)"
+
+m_FormationDisplayName_Wedge_24Count	= "Wedge (24 Units)"
+m_FormationDisplayName_Line_24Count		= "Line (24 Units)"
+m_FormationDisplayName_Mob_24Count		= "Mob (24 Units)"
