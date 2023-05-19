@@ -1,0 +1,62 @@
+[UIPhotoboothExtendedMaster]
+
+m_CategoryObjects			= "Edit Objects"
+m_CategoryLightSources		= "Edit Light Sources"
+m_CategoryExtendedOptions	= "Options"
+m_CategoryDisableUI			= "Take Landscape Screenshot (Render may break)"
+
+m_UnitEditor_SelectedSoldier	= "Selected Unit"
+m_UnitEditor_Pose				= "Pose"
+m_UnitEditor_Animation			= "Animations"
+m_UnitEditor_ToggleFootIK		= "Toggle Foot IK"
+m_UnitEditor_ToggleLeftHandIK	= "Toggle Left Hand IK"
+m_UnitEditor_HideUnit			= "Hide Unit"
+
+m_Editor_Step					= "Step"
+
+m_Editor_Position_X				= "Position X"
+m_Editor_Position_Y				= "Position Y" 
+m_Editor_Position_Z				= "Position Z" 
+m_Editor_Position_Reset			= "Reset Position"
+
+m_Editor_Rotation_Pitch			= "Pitch"
+m_Editor_Rotation_Yaw			= "Yaw"
+m_Editor_Rotation_Roll			= "Roll"
+m_Editor_Rotation_Reset			= "Reset Rotation"
+
+m_Editor_Scale_X				= "Scale"
+m_Editor_Scale_Reset			= "Reset Scale"
+
+m_PrefixObject					= "Object"
+m_CreateNewObject				= "Create New Object"
+m_ObjectEditor_SelectedObject	= "Selected Object"
+m_ObjectEditor_HideObject		= "Hide Object"
+m_ObjectEditor_DeleteObject		= "Delete Object"
+
+m_PrefixLight					= "Light Source"
+m_CreateNewLight				= "Create New Light Source"
+
+m_LightEditor_Type				= "Light Type"
+m_LightEditor_HideLight			= "Toggle Light"
+m_LightEditor_DeleteLight		= "Delete Light"
+
+m_LightEditor_Brightness		= "Brightness"
+m_LightEditor_HexColor			= "Light Color (Hex)"
+
+m_LightEditor_Spot_InnerConeAngle	= "Inner Radius"
+m_LightEditor_Spot_OuterConeAngle	= "Outer Radius"
+
+m_Graphics_PrefixTextRandomize_Button				= "Randomize Text"
+m_Graphics_TextRandomize_Button						= "Randomize All Text and Layout"
+m_Graphics_TextRandomize_IgnoreFormations			= "Randomize Option: Ignore Formations"
+
+m_ExtOptions_MaxUnitCount			= "Max Unit Count"
+m_ExtOptions_IgnoreFormationLimits	= "Ignore Formation Limits"
+
+m_ExtOptions_PosterLandscapeSizeX	= "Landscape Shot X Resolution"
+m_ExtOptions_PosterLandscapeSizeY	= "Landscape Shot Y Resolution"
+
+m_DestructiveAction_Randomize_Title	= "RANDOMIZE?"
+m_DestructiveAction_Randomize_Body	= "All current progress except for settings will be lost!"
+
+m_Tooltip_Disabled_MCO				= "The Mod Class Override for 'X2Photobooth' is disabled! Please edit this mod's XComEngine.ini to enable the override again, then restart the game."
