@@ -2314,7 +2314,7 @@ function OnPressRandomizeTextBoxBase()
 		break;
 	}
 
-	class'X2PhotoboothExtended'.static.GenerateExpandedAutoTextStrings(autoText, ePBTLS_Auto);
+	class'X2Helpers_PhotoboothExtended'.static.GenerateExpandedAutoTextStrings(autoText, ePBTLS_Auto);
 
 	// If our index isn't -1, then extract the string
 	if (m_iLastTouchedTextBox > -1)
