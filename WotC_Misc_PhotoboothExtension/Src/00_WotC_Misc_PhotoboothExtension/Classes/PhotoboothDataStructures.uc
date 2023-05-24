@@ -34,4 +34,11 @@ enum EUIPropagandaExtendedScreenType
 	eUIPropagandaType_MAX
 };
 
+struct DLCAnimSetAdditions
+{
+	var Name CharacterTemplate;
+	var String AnimSet;
+	var String FemaleAnimSet;
+};
+
 delegate vector NewObjectLocationCallback(); 

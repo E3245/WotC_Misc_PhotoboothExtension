@@ -3,6 +3,9 @@ class X2DownloadableContentInfo_Misc_PhotoboothExtended extends X2DownloadableCo
 var config array<X2PhotoboothStaticMeshTemplate>	arrPhotoboothStaticMeshes;
 var config array<X2PhotoboothFXTemplate>			arrPhotoboothParticleEffects;
 
+// Add new animsets to specific character templates
+var config array<DLCAnimSetAdditions>				arrAnimSetAdditions;
+
 var localized string m_FormationDisplayName_Wedge_12Count;
 var localized string m_FormationDisplayName_Line_12Count;
 var localized string m_FormationDisplayName_Mob_12Count;
@@ -22,6 +25,8 @@ static function X2PhotoboothStaticMeshTemplate GetTemplateByName(name TemplateNa
 static event OnPostTemplatesCreated()
 {
 	FixPhotoboothFormationLocalization();
+
+	OnPostCharacterTemplatesCreated();
 }
 
 static function FixPhotoboothFormationLocalization()
@@ -56,6 +61,31 @@ static function FixPhotoboothFormationLocalization()
 				break;
 			default:
 				break;
+		}
+	}
+}
+
+// OnPostTemplatesCreated() event: Add Animsets to specific soldier templates
+static function OnPostCharacterTemplatesCreated()
+{
+	local X2CharacterTemplateManager CharacterTemplateMgr;
+	local X2CharacterTemplate SoldierTemplate;
+	local array<X2DataTemplate> DataTemplates;
+	local int ScanTemplates, ScanAdditions;
+
+	CharacterTemplateMgr = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
+	
+	for ( ScanAdditions = 0; ScanAdditions < default.arrAnimSetAdditions.Length; ++ScanAdditions )
+	{
+		CharacterTemplateMgr.FindDataTemplateAllDifficulties(default.arrAnimSetAdditions[ScanAdditions].CharacterTemplate, DataTemplates);
+		for ( ScanTemplates = 0; ScanTemplates < DataTemplates.Length; ++ScanTemplates )
+		{
+			SoldierTemplate = X2CharacterTemplate(DataTemplates[ScanTemplates]);
+			if (SoldierTemplate != none)
+			{
+				SoldierTemplate.AdditionalAnimSets.AddItem(AnimSet(`CONTENT.RequestGameArchetype(default.arrAnimSetAdditions[ScanAdditions].AnimSet)));
+				SoldierTemplate.AdditionalAnimSetsFemale.AddItem(AnimSet(`CONTENT.RequestGameArchetype(default.arrAnimSetAdditions[ScanAdditions].FemaleAnimSet)));
+			}
 		}
 	}
 }
