@@ -13,6 +13,15 @@
     <Content Include="Config\Effects\XComContent.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\LEBPortrait\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\LEBPortrait\XComLEBPortrait_Defaults.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Poses\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Props\XComContent.ini">
       <SubType>Content</SubType>
     </Content>
@@ -55,7 +64,10 @@
     <Content Include="Localization\00_WotC_Misc_PhotoboothExtension.int">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Localization\WotC_Misc_PhotoboothExtension.int">
+    <Content Include="Localization\LEBPortrait.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WotC_Misc_PhotoboothExtension_UI.int">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Localization\XComGame.int">
@@ -98,30 +110,65 @@
     <Content Include="Src\00_WotC_Misc_PhotoboothExtension\Classes\X2PhotoboothReplacement.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIArmory_Photobooth_Extended.uc">
+    <Content Include="Src\LEBPortrait\Classes\LEBPortrait_Defaults.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIPhotoboothExtendedMaster.uc">
+    <Content Include="Src\LEBPortrait\Classes\UIScreenlistenerAvengerHUD_LEBPortrait.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UIPhotoboothReview_Extended.uc">
+    <Content Include="Src\LEBPortrait\Classes\UIScreenlistenerMCM_LEBPortrait.uc">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Src\WotC_Misc_PhotoboothExtension\Classes\UITactical_Photobooth_Extended.uc">
+    <Content Include="Src\LEBPortrait\Classes\X2DownloadableContentInfo_LEBPortrait.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\LEBPortrait\Classes\X2Photobooth_StrategyAutoGen_LEBPortrait.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\LEBPortrait\Classes\XComGameState_LEBPortrait.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_TemplateMgr\Classes\X2PropagandaPoseDataSet.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_TemplateMgr\Classes\X2PropagandaPoseTemplate.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_TemplateMgr\Classes\X2PropagandaPoseTemplateManager.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_UI\Classes\UIArmory_Photobooth_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_UI\Classes\UIPhotoboothExtendedMaster.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_UI\Classes\UIPhotoboothReview_Extended.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotC_Misc_PhotoboothExtension_UI\Classes\UITactical_Photobooth_Extended.uc">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config" />
     <Folder Include="Config\Effects" />
+    <Folder Include="Config\LEBPortrait" />
+    <Folder Include="Config\Poses" />
     <Folder Include="Config\Props" />
     <Folder Include="Localization" />
     <Folder Include="Content" />
     <Folder Include="Src" />
     <Folder Include="Src\00_WotC_Misc_PhotoboothExtension" />
     <Folder Include="Src\00_WotC_Misc_PhotoboothExtension\Classes" />
+    <Folder Include="Src\LEBPortrait" />
+    <Folder Include="Src\LEBPortrait\Classes" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension_UI" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension_TemplateMgr" />
     <Folder Include="Src\WotC_Misc_PhotoboothExtension" />
     <Folder Include="Src\WotC_Misc_PhotoboothExtension\Classes" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension_TemplateMgr\Classes" />
+    <Folder Include="Src\WotC_Misc_PhotoboothExtension_UI\Classes" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
