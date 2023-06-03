@@ -14,7 +14,11 @@ static function array<X2DataTemplate> CreateTemplates()
 	local X2PropagandaPoseTemplate Template;
 	local array<X2DataTemplate> Templates;
 	local name IterTemplateName;
+
+	// Create Special Template
+	Templates.AddItem(CreateEmptyPhotoboothPoseTemplate());
 	
+	// Create the rest of the templates
 	foreach default.arrPoseTemplates(IterTemplateName)
 	{
 		`CREATE_X2TEMPLATE(class'X2PropagandaPoseTemplate', Template, IterTemplateName);
@@ -23,4 +27,13 @@ static function array<X2DataTemplate> CreateTemplates()
 	}
 
 	return Templates;
+}
+
+static function X2DataTemplate CreateEmptyPhotoboothPoseTemplate()
+{
+	local X2PropagandaPoseTemplate Template;
+
+	`CREATE_X2TEMPLATE(class'X2PropagandaPoseTemplate', Template, 'PhEx_SPECIAL_NONE');
+
+	return Template;
 }
